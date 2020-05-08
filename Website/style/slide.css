@@ -1,0 +1,256 @@
+
+
+
+
+/******************************************************************************************************************************************************************/
+/****************************************************************THE-SLIDER-OF-THE-MOBILE-VERSION******************************************************************/
+/******************************************************************************************************************************************************************/
+
+
+
+.slideshow-container {
+	display: none;
+  position: relative;
+  bottom: 308px;
+  left: 98px;
+}
+.slideshow-container img{
+    width: 297px !important;
+    height: 343px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -297px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  position: relative;
+  bottom: 52px;
+  right: 81px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#dots-slide{
+      position: relative;
+    left: 173px;
+}
+
+.active, .dot:hover {
+  background-color: #3d575a;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+@media (max-width: 500px){
+    .slideshow-container {
+      display: initial;
+    }
+
+}
+
+
+/******************************************************************************************************************************************************************/
+/*********************************************************************THE-CSS-OF-MOBILE-MENU***********************************************************************/
+/******************************************************************************************************************************************************************/
+
+
+
+.header-mobile{
+  display: none !important;
+}
+
+ #chk{
+  display: none;
+ }
+ #chko{
+ 
+}
+ .exit:hover{
+  cursor: pointer;
+  color: blue;
+ }
+#xx{
+    color: black;
+    position: relative;
+    left: 190px;
+    bottom: 74px;
+    font-size: 20px;
+
+}
+ @media(max-width: 500px){
+ 	.header-mobile {
+ 		display: initial !important;
+ 	}
+ @media (max-width: 500px){
+  .show-menu-btn{
+  display: block !important;
+      z-index: 99;
+    position: absolute;
+    left: 426px;
+    top: 18px;
+    height: 24px;
+    width:34px; 
+   }
+   .menu{
+        position: absolute;
+    z-index: 99;
+    position: fixed;
+   }
+}
+
+
+  
+         .show-menu-btn,.hide-menu-btn{
+           display: block;
+  }
+  .menu{
+    max-width: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #333;
+    text-align: center;
+    padding: 80px 0;
+    transition: max-width 1s ease-out;
+    float: right;
+    clear: both;
+  }
+  .menu a{
+    display: inline-block;
+    padding: 20px;
+    color: #FFF;
+    text-decoration: none;
+    width: 100%;
+  }
+  .menu a:hover{
+    color: red;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  .nav-icon{
+    width: 25px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+    z-index: 99;
+  }
+  .nav-icon::before{
+    content: "";
+    width: 25px;
+    height: 4px;
+    position: relative;
+    top: -7px;
+    display: block;
+    background-color: #000;
+  }
+  .nav-icon::after{
+    content: "";
+    width: 25px;
+    height: 4px;
+    position: relative;
+    top: 3px;
+    display: block;
+    background-color: #000;
+  }
+  .show-menu-btn{
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+#chk:checked ~ .menu{
+  max-width: 90%;
+}
+#chk:checked ~ .show-menu-btn .nav-icon{
+  background:transparent;
+}
+#chk:checked ~ .show-menu-btn .nav-icon::before{
+  transform: rotate(-45deg);
+  top: 0px;
+  }
+#chk:checked ~ .show-menu-btn .nav-icon::after{
+  transform: rotate(45deg);
+  top: -3px;
+}
+
+
+}
+
+
+
+
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/

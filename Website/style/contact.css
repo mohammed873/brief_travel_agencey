@@ -1,0 +1,241 @@
+.swal-overlay {
+    background-color: rgba(0,0,0,.8) !important;
+}
+.header2{
+	background-image: url("p2.webp");
+   min-height: 750px;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.contact-div{
+    width: 80%;
+    height: 926px;
+    position: relative;
+    left: 145px;
+    bottom: 42px;
+}
+#flag{
+	width: 100%;
+	height: 100%;
+}
+#opa{
+    width: 100%;
+    height: 926px;
+    background-color: black;
+    position: relative;
+    bottom: 930px;
+    opacity: 0.5;
+  
+}
+.title-contact{
+	border: 1px solid black;
+	background-color: black;
+    width: 90%;
+    height: 90px;
+    position: absolute;
+    bottom: 808px;
+    left: 5%;
+    width: 90%;
+}
+
+
+#title{
+	position: absolute;
+    left: 484px;
+    color: white;
+    top: 29px;
+    font-family: Stencil;
+}
+#form{
+  height: 765px;
+}
+.contact-elements{
+	 width: 90%;
+   
+    height: 761px;
+    border: 1px solid black;
+    position: absolute;
+    left: 5%;
+    background-color: #231313;
+    bottom: 46px;
+background: rgba(255,255,255,0.8)
+
+}
+#error-message{
+  font-family: Montserrat;
+  font-size: 25px;
+  position: relative;
+  bottom: -23px;
+  background-color:#dbd6d6;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+#error-name{
+    position: absolute;
+    right: 941px;
+    top: 109px;
+    width: 98.275px;
+    text-align: start;
+}
+#error-mail{
+    position: absolute;
+    right: 941px;
+    top: 217px;
+    width: 98.275px;
+    text-align: start;
+}
+#error-phone{
+    position: absolute;
+    right: 936px;
+    top: 321px;
+    width: 103.275px;
+    text-align: start;
+}
+#error-comment{
+    position: absolute;
+    right: 901px;
+    top: 615px;
+    width: 138.275px;
+    text-align: start;
+}
+#name{
+	width: 90%;
+    height: 7%;
+    position: relative;
+   left: 5%;
+    top: 6%;
+    background-color: white;
+
+    }
+    #gmail{
+width: 90%;
+    height: 7%;
+    position: relative;
+   left: 5%;
+    top: 12%;
+    background-color: white;
+
+    }
+    #phone{
+width: 90%;
+    height: 7%;
+    position: relative;
+   left: 5%;
+    top: 18%;
+    background-color: white;
+
+    }
+    #comment{
+    	width: 90%;
+    height: 33%;
+    position: relative;
+   left: 5%;
+    top: 24%;
+    background-color: white;
+
+    }
+     .fonts{
+     	font-family: fontawesome;
+     	font-size: 18px;
+     }
+    #send{
+    background-color: #732C3B; 
+    position: relative;
+    top: 34%;
+    left: -48%;
+    width: 9%;
+    height: 5%;
+    border: none;
+    color: white;
+
+    }
+
+
+@media(max-width: 500px){
+  .swal-modal{
+    width: 81%;
+  }
+  .header2 {
+     width: 100%;
+    position: relative;
+    bottom: 200px;
+    background-position: center;
+  }
+  .contact-div{
+  	position: relative;
+    left: 52px;
+    bottom: 303px;
+  }
+  #title{
+  	position: absolute;
+  	left: 113px;
+  }
+#send{
+	top: 32%;
+	width: 23%;
+  height: 5%;
+  border: none;
+  left: 138px;
+}
+.contact-foot{
+  position: relative;
+  bottom: 300px;
+}
+
+.mede1-mobile{
+      font-size: 14px;
+      flex-basis: 50%;
+  color: white;
+  text-align: center;
+  position: relative;
+     top: 6px;
+}
+.mede2-mobile{
+  font-size: 14px;
+    flex-basis: 50%;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 6px;
+}
+.social-media{
+  position: relative;
+  right: 45px;
+  top: 107px;
+}
+
+
+body{
+  height: 12px;
+}
+#error-name{
+    position: absolute;
+    right: 228px;
+    top: 113px;
+    width: 98.275px;
+    text-align: start;
+}
+#error-phone{
+    position: absolute;
+    right: 225px;
+    top: 320px;
+    width: 103.275px;
+    text-align: start;
+}
+#error-mail{
+    position: absolute;
+    right: 228px;
+    top: 218px;
+    width: 98.275px;
+    text-align: start;
+}
+#error-comment{
+    position: absolute;
+    right: 195px;
+    top: 622px;
+    width: 132.275px;
+    text-align: start;
+}
+}
+
